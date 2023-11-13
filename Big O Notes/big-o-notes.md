@@ -28,3 +28,14 @@ When do you multiply the runtimes, and when do you add them?
 
 **Multiplying** - If your algorithm is in the form of 'do this for every time you do that,' then you multiply the runtimes. O(A * B).
 
+### Log N Runtimes
+
+If you see a problem where the number of elements in the problem space gets halved each time, that will likely be an O(log N) runtime
+
+**Binary Search** is a great example of Log N runtimes. 
+
+### Recursive Runtimes
+
+
+
+

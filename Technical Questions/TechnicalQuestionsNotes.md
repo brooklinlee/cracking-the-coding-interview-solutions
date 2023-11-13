@@ -8,7 +8,7 @@
 
 4. **Type your paper code as-is into your computer** - This will help you know what mistakes you are regularly making and can improve on.
 
-### Core Data Sctructures, Algorithms, and Concepts
+### Core Data Structures, Algorithms, and Concepts
 
 | Data Structures           | Algorithms                    | Concepts                   |
 | ------------------------- | ------------------------------ | --------------------------- |

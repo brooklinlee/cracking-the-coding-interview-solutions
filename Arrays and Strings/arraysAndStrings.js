@@ -4,9 +4,34 @@
 
 Implement an algorithm to determine if a string has all unique characters.
 
-What if you cannot use additional data structures?
+What if you cannot use additional data structures? (no additional arrays, only built in string methods)
 
 */
+// INPUT - string
+// OUTPUT - true or false
+
+// break apart the string into each character
+// all to lowercase so equal
+// determine if there are any repeating characters
+
+// with additional array
+function uniqueChar(str){
+let splitStr = str.toLowerCase().split('')
+for (i = 0; i < splitStr.length; i++) {
+  for (j = i+1; j < splitStr.length; j++){
+    if (splitStr[i] != splitStr[j]) {
+      continue
+    } else {
+      return false
+    }
+  }
+}
+return true
+}
+
+console.log(uniqueChar('abfcde')) 
+// console.log(uniqueChar('Abcd')) 
+
 
 /* 1.2 Check Permutation:
 

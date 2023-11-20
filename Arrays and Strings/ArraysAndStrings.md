@@ -39,3 +39,7 @@ Entry - what each key/value pair is known as
 So how do you know at which index to put a piece of information? 
 
 `key.hashCode() % capacity`
+
+What happens when you have a collision? (A collision is when multiple entries are at the same hashtable index)
+
+Each index is also known as a bucket. 

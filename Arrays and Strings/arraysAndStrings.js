@@ -4,7 +4,7 @@
 
 Implement an algorithm to determine if a string has all unique characters.
 
-What if you cannot use additional data structures? (no additional arrays, only built in string methods)
+What if you cannot use additional data structures?
 
 */
 // INPUT - string
@@ -29,8 +29,20 @@ for (i = 0; i < splitStr.length; i++) {
 return true
 }
 
+
+// w/o additional data structures - sort
+function uniqueCharTwo(str) {
+  let sortedStr = str.split('').sort()
+  for (i = 0; i < sortedStr.length; i++) {
+    if (sortedStr[i] === sortedStr[(i + 1)]) {
+      return false
+    } 
+  }
+  return true
+}
+
 console.log(uniqueChar('abfcde')) 
-// console.log(uniqueChar('Abcd')) 
+console.log(uniqueCharTwo('dab')) 
 
 
 /* 1.2 Check Permutation:
